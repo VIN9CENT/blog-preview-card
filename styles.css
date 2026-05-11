@@ -60,17 +60,30 @@
   margin: 0 0 1rem;
   padding: 0.5rem;
 }
-.card__header:hover,
-.card__header:focus {
+.card__header--link:link{
+  color: blue;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+.card__header--link:visited{
+  color: purple;
+  text-decoration: none;
+}
+
+
+.card__header--link:hover,
+.card__header--link:focus-visible {
   background-color: hsl(47, 88%, 63%);
   transition: 0.5s;
   border-radius: 6px;
   cursor: pointer;
   text-decoration: underline;
+  color: blue;
 }
-.card__header:active {
-  color: hsl(0, 100%, 50%);
-  text-decoration: none;
+.card__header--link:active{
+    color: hsl(0, 100%, 50%);
+    text-decoration: none;
 }
 
 .card__description {
